@@ -35,6 +35,10 @@
     radial-gradient(circle at 85% 18%, rgba(231,181,79,.2) 0 12%, transparent 13%),
     repeating-linear-gradient(90deg, transparent 0 12px, rgba(141,31,45,.08) 12px 14px, transparent 14px 28px); border-radius:22px; }
   .slide[data-theme="hanok"] .palace-band { background:linear-gradient(90deg,#225a58 0 22%,#cfb17a 22% 44%,#8d1f2d 44% 66%,#d07d2f 66% 82%,#225a58 82% 100%); }
+  .slide[data-theme="hanok"] .card, .slide[data-theme="hanok"] table { box-shadow:inset 0 0 0 1px rgba(115,82,50,.12); }
+  .slide[data-theme="hanok"]::before { background:
+    linear-gradient(90deg, rgba(112,81,47,.08) 0 1px, transparent 1px 24px, rgba(112,81,47,.08) 24px 25px, transparent 25px 100%),
+    linear-gradient(0deg, rgba(112,81,47,.08) 0 1px, transparent 1px 24px, rgba(112,81,47,.08) 24px 25px, transparent 25px 100%); background-size:26px 26px; }
 
   .slide[data-theme="mediaart"] { background:linear-gradient(180deg,rgba(236,243,247,.97),rgba(232,236,245,.97)); }
   .slide[data-theme="mediaart"]::before { border-color:rgba(15,63,83,.28); }
@@ -116,16 +120,16 @@
 </head>
 <body>
 <div id="three-wrap"><canvas id="three-canvas"></canvas></div>
-<div class="runway-title"><span class="dot"></span> 궁궐·한옥 무대에서 호랑이 캐릭터 이동</div>
-<div class="place-label" id="placeLabel">출발: 문화유산 광장</div>
-<div class="transition-banner" id="transitionBanner"><div class="transition-card"><b id="transitionTitle">다음 장소로 이동 중</b><p id="transitionText">캐릭터가 목적지 게이트에 도착하면 화면이 전환됩니다.</p></div></div>
+<div class="runway-title"><span class="dot"></span> 제주목 관아·관덕정 무대에서 돌하르방 이동</div>
+<div class="place-label" id="placeLabel">출발: 관덕정 광장</div>
+<div class="transition-banner" id="transitionBanner"><div class="transition-card"><b id="transitionTitle">다음 장소로 이동 중</b><p id="transitionText">청사초롱을 든 돌하르방이 목적지에 도착하면 화면이 전환됩니다.</p></div></div>
 <div class="flash" id="flash"></div>
 
 <main class="deck" id="deck">
-  <section class="slide active" data-theme="palace" data-place="문화유산 광장"><span class="kicker">1 / Opening</span><div class="palace-band"></div><h1>문화유산 미디어아트로<br>궁궐·한옥 감성의 K-원도심을 다시 걷게 하다</h1><p class="lead">방문객 유입 → 체류 → 지역상권 소비로 이어지는 선순환 플랫폼 구축</p><p class="muted">팀 내 발표용 / 1시간 구성</p><span class="heritage-tag">궁궐·한옥 테마 강화판</span></section>
+  <section class="slide active" data-theme="palace" data-place="문화유산 광장"><span class="kicker">1 / Opening</span><div class="palace-band"></div><h1>관덕정·제주목 관아 미디어아트로<br>제주 원도심을 다시 걷게 하다</h1><p class="lead">관덕정·제주목 관아의 한국적 공간미와 야간 미디어아트를 결합해 방문객 유입 → 체류 → 지역상권 소비로 이어지는 선순환 플랫폼 구축</p><p class="muted">팀 내 발표용 / 1시간 구성</p><span class="heritage-tag">제주목 관아·관덕정 영감 / 청사초롱 든 돌하르방 버전</span></section>
   <section class="slide" data-theme="palace" data-place="문제 진단 지점"><span class="kicker">2 / 문제의식</span><div class="palace-band"></div><h2>기존 축제의 한계</h2><div class="cols3"><div class="card"><strong>행사장 중심</strong>관람 후 바로 이탈해 원도심 확산이 약함</div><div class="card"><strong>소비 연결 약함</strong>방문객 유입이 상점 매출로 충분히 이어지지 않음</div><div class="card"><strong>체류공간 부족</strong>보고, 쉬고, 먹고, 사는 흐름이 분절됨</div></div></section>
   <section class="slide" data-theme="palace" data-place="핵심 메시지 광장"><span class="kicker">3 / 핵심 메시지</span><div class="palace-band"></div><div class="big-message">단순 행사 중심이 아닌, 3가지 해결대안을 통해 지역축제가 실질적인 지역경제 활성화 플랫폼으로 기능하도록 추진</div></section>
-  <section class="slide" data-theme="mediaart" data-place="미디어아트 무대"><span class="kicker">4 / 핵심 콘텐츠</span><div class="palace-band"></div><h2>문화유산 미디어아트</h2><p class="lead">한국적 정취와 야간 관광 수요를 결합하는 대표 유입 콘텐츠</p><ul><li>문화유산의 역사·상징성을 한국적 미감의 영상과 조명으로 재해석</li><li>야간 방문 동기 창출 및 체류시간 확대</li><li>관광객이 사진·영상으로 확산할 수 있는 시각적 콘텐츠 제공</li></ul></section>
+  <section class="slide" data-theme="mediaart" data-place="미디어아트 무대"><span class="kicker">4 / 핵심 콘텐츠</span><div class="palace-band"></div><h2>문화유산 미디어아트</h2><p class="lead">관덕정과 제주목 관아의 장소성을 바탕으로 야간 관광 수요를 끌어오는 대표 유입 콘텐츠</p><ul><li>관덕정·제주목 관아의 역사성과 탐라의 기억을 한국적 미감의 영상과 조명으로 재해석</li><li>야간 방문 동기 창출 및 체류시간 확대</li><li>관광객이 사진·영상으로 확산할 수 있는 시각적 콘텐츠 제공</li></ul></section>
   <section class="slide" data-theme="palace" data-place="선순환 플랫폼"><span class="kicker">5 / 운영구조</span><div class="palace-band"></div><h2>방문객 유입-체류-소비 플랫폼</h2><div class="cols3"><div class="card"><strong>① 유입</strong>미디어아트, 공연, 야간 콘텐츠</div><div class="card"><strong>② 체류</strong>휴게존, 해설투어, 체험, 먹거리</div><div class="card"><strong>③ 소비</strong>페이백, 통합패스, 상점 방문 이벤트</div></div></section>
   <section class="slide" data-theme="hanok" data-place="페이백 상점"><span class="kicker">6 / 해결대안 ①</span><div class="palace-band"></div><h2>축제 연계 지역상품권 페이백</h2><p>참여 상점에서 일정 금액 이상 소비한 방문객에게 지역상품권 또는 모바일 포인트를 환급합니다.</p><div class="cols"><div class="card"><strong>목적</strong>축제 방문을 실제 원도심 소비로 전환</div><div class="card"><strong>성과관리</strong>영수증, 환급액, 참여상점 매출 변화 집계</div></div></section>
   <section class="slide" data-theme="hanok" data-place="골목 패스 게이트"><span class="kicker">7 / 해결대안 ②</span><div class="palace-band"></div><h2>통합 패스권 제도</h2><p>축제장-상점-관광지를 하나의 패스권으로 묶어 골목상권 동선을 확장합니다.</p><ul><li>미디어아트 관람 + 상점 할인 + 관광지 혜택</li><li>모바일 QR 또는 종이 패스 병행</li><li>스탬프 투어 방식으로 방문 동기 강화</li></ul></section>
@@ -228,9 +232,9 @@ updateChrome();
   const moon = new THREE.Mesh(new THREE.SphereGeometry(1.1,32,32), new THREE.MeshBasicMaterial({color:0xfff3c6}));
   moon.position.set(-7,6.5,-10); scene.add(moon);
 
-  const palaceWallMat = new THREE.MeshStandardMaterial({color:0xb8a48b, roughness:.95});
-  const roofTileMat = new THREE.MeshStandardMaterial({color:0x214a4e, roughness:.7});
-  const lanternMat = new THREE.MeshStandardMaterial({color:0xe8b85b, emissive:0xa85d0c, emissiveIntensity:.8});
+  const palaceWallMat = new THREE.MeshStandardMaterial({color:0x5d5d61, roughness:1});
+  const roofTileMat = new THREE.MeshStandardMaterial({color:0x315a63, roughness:.75});
+  const lanternMat = new THREE.MeshStandardMaterial({color:0xe1b766, emissive:0x8a4d0c, emissiveIntensity:.9});
 
   for(let i=0;i<10;i++){
     const bx = -18 + i*4;
@@ -257,34 +261,50 @@ updateChrome();
   const mountain2 = new THREE.Mesh(new THREE.ConeGeometry(6.4,5.6,4), mountainMat); mountain2.position.set(0,1.6,-10.4); scene.add(mountain2);
   const mountain3 = new THREE.Mesh(new THREE.ConeGeometry(5.6,4.9,4), mountainMat); mountain3.position.set(9,1.3,-9.3); scene.add(mountain3);
 
+  const dancheongRed = new THREE.MeshStandardMaterial({color:0x8f2a27, roughness:.78});
+  const woodMat = new THREE.MeshStandardMaterial({color:0x71412a, roughness:.82});
+  const creamWallMat = new THREE.MeshStandardMaterial({color:0xd9cfbf, roughness:.92});
+  const tealMat = new THREE.MeshStandardMaterial({color:0x2f6c6b, roughness:.75});
+  const stonePlatformMat = new THREE.MeshStandardMaterial({color:0xbbb4aa, roughness:1});
+
   const palace = new THREE.Group(); scene.add(palace);
-  const palaceBodyMat = new THREE.MeshStandardMaterial({color:0xcdbca0, roughness:.9});
-  const palaceWoodMat = new THREE.MeshStandardMaterial({color:0x6a301f, roughness:.8});
-  palace.position.set(0,0,-6.4);
-  const base = new THREE.Mesh(new THREE.BoxGeometry(5.9,.42,2.2), new THREE.MeshStandardMaterial({color:0xbdb6ac, roughness:1}));
-  base.position.set(0,-.58,0); palace.add(base);
-  const hall = new THREE.Mesh(new THREE.BoxGeometry(4.7,1.45,1.7), palaceBodyMat); hall.position.set(0,.26,0); palace.add(hall);
-  const roof1 = new THREE.Mesh(new THREE.BoxGeometry(5.5,.18,2.2), roofTileMat); roof1.position.set(0,1.1,0); palace.add(roof1);
-  const roofWingL = new THREE.Mesh(new THREE.BoxGeometry(1.15,.12,1.85), roofTileMat); roofWingL.position.set(-2.75,.95,0); roofWingL.rotation.z=.26; palace.add(roofWingL);
-  const roofWingR = roofWingL.clone(); roofWingR.position.x=2.75; roofWingR.rotation.z=-.26; palace.add(roofWingR);
-  for(let i=0;i<5;i++){
-    const pillar = new THREE.Mesh(new THREE.BoxGeometry(.14,1.3,.14), palaceWoodMat); pillar.position.set(-1.8 + i*0.9,-.02,.74); palace.add(pillar);
+  palace.position.set(0,0,-6.6);
+  const wolDae = new THREE.Mesh(new THREE.BoxGeometry(6.8,.5,2.8), stonePlatformMat); wolDae.position.set(0,-.62,0); palace.add(wolDae);
+  const stair = new THREE.Mesh(new THREE.BoxGeometry(2.8,.18,1.0), new THREE.MeshStandardMaterial({color:0xd4cec4, roughness:1})); stair.position.set(0,-.44,1.42); palace.add(stair);
+  const floor = new THREE.Mesh(new THREE.BoxGeometry(5.25,.14,2.0), woodMat); floor.position.set(0,-.18,0); palace.add(floor);
+  const hallCore = new THREE.Mesh(new THREE.BoxGeometry(4.45,1.28,1.54), creamWallMat); hallCore.position.set(0,.34,-.02); palace.add(hallCore);
+  for(let i=0;i<6;i++){
+    const pillar = new THREE.Mesh(new THREE.BoxGeometry(.16,1.46,.16), dancheongRed);
+    pillar.position.set(-1.95 + i*0.78,.05,.77); palace.add(pillar);
   }
-  const stair = new THREE.Mesh(new THREE.BoxGeometry(2.6,.18,.95), new THREE.MeshStandardMaterial({color:0xd9d0c3, roughness:1})); stair.position.set(0,-.44,1.26); palace.add(stair);
-  const gateArch = new THREE.Group(); gateArch.position.set(0,-.18,-3.1); scene.add(gateArch);
-  const gatePillarMat = new THREE.MeshStandardMaterial({color:0x8d1f2d, roughness:.8});
-  const gp1 = new THREE.Mesh(new THREE.BoxGeometry(.22,2.1,.22), gatePillarMat); gp1.position.set(-1.05,.1,0); gateArch.add(gp1);
-  const gp2 = gp1.clone(); gp2.position.x=1.05; gateArch.add(gp2);
-  const beam = new THREE.Mesh(new THREE.BoxGeometry(2.5,.18,.26), palaceWoodMat); beam.position.set(0,1.1,0); gateArch.add(beam);
-  const gateRoof = new THREE.Mesh(new THREE.BoxGeometry(3.0,.16,.74), roofTileMat); gateRoof.position.set(0,1.45,0); gateArch.add(gateRoof);
-  const gw1 = new THREE.Mesh(new THREE.BoxGeometry(.9,.12,.58), roofTileMat); gw1.position.set(-1.07,1.31,0); gw1.rotation.z=.28; gateArch.add(gw1);
-  const gw2 = gw1.clone(); gw2.position.x=1.07; gw2.rotation.z=-.28; gateArch.add(gw2);
-  const flagColors=[0x8d1f2d,0x0f3f53,0xc98c2a];
-  [-1.9,1.9].forEach((fx,idx)=>{
-    const pole = new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,1.8,10), palaceWoodMat); pole.position.set(fx,.42,-4.75); scene.add(pole);
-    const banner = new THREE.Mesh(new THREE.PlaneGeometry(.55,.72), new THREE.MeshBasicMaterial({color:flagColors[idx], side:THREE.DoubleSide})); banner.position.set(fx+.22,.75,-4.75); scene.add(banner);
+  const beamFront = new THREE.Mesh(new THREE.BoxGeometry(4.9,.16,.16), woodMat); beamFront.position.set(0,.98,.78); palace.add(beamFront);
+  const lintel = new THREE.Mesh(new THREE.BoxGeometry(4.7,.2,.12), tealMat); lintel.position.set(0,.8,.79); palace.add(lintel);
+  const roofMain = new THREE.Mesh(new THREE.BoxGeometry(5.6,.17,2.35), roofTileMat); roofMain.position.set(0,1.28,0); palace.add(roofMain);
+  const roofLeft = new THREE.Mesh(new THREE.BoxGeometry(1.55,.11,2.05), roofTileMat); roofLeft.position.set(-2.9,1.1,0); roofLeft.rotation.z=.26; palace.add(roofLeft);
+  const roofRight = roofLeft.clone(); roofRight.position.x=2.9; roofRight.rotation.z=-.26; palace.add(roofRight);
+  const eaveFront = new THREE.Mesh(new THREE.BoxGeometry(5.95,.08,.46), tealMat); eaveFront.position.set(0,1.13,1.02); palace.add(eaveFront);
+  const signboard = new THREE.Mesh(new THREE.BoxGeometry(1.25,.38,.05), new THREE.MeshStandardMaterial({color:0x2c1d15})); signboard.position.set(0,.75,.82); palace.add(signboard);
+  const signInner = new THREE.Mesh(new THREE.BoxGeometry(1.05,.24,.06), new THREE.MeshStandardMaterial({color:0xe6d2a4})); signInner.position.set(0,.75,.84); palace.add(signInner);
+
+  const corridorL = new THREE.Group(); scene.add(corridorL); corridorL.position.set(-7.2,-.28,-5.95);
+  const corridorR = new THREE.Group(); scene.add(corridorR); corridorR.position.set(7.2,-.28,-5.95);
+  [corridorL, corridorR].forEach((c,idx)=>{
+    const body = new THREE.Mesh(new THREE.BoxGeometry(3.0,.95,1.2), creamWallMat); c.add(body);
+    const roof = new THREE.Mesh(new THREE.BoxGeometry(3.45,.14,1.45), roofTileMat); roof.position.set(0,.58,0); c.add(roof);
+    const wing1 = new THREE.Mesh(new THREE.BoxGeometry(.86,.1,1.2), roofTileMat); wing1.position.set(-1.55,.45,0); wing1.rotation.z=.2; c.add(wing1);
+    const wing2 = wing1.clone(); wing2.position.x=1.55; wing2.rotation.z=-.2; c.add(wing2);
+    const p1 = new THREE.Mesh(new THREE.BoxGeometry(.14,1.1,.14), dancheongRed); p1.position.set(-.95,-.03,.5); c.add(p1);
+    const p2 = p1.clone(); p2.position.x=0; c.add(p2); const p3=p1.clone(); p3.position.x=.95; c.add(p3);
   });
 
+  const frontGate = new THREE.Group(); scene.add(frontGate); frontGate.position.set(0,-.1,-3.25);
+  const gL = new THREE.Mesh(new THREE.BoxGeometry(.22,1.9,.22), dancheongRed); gL.position.set(-1.08,.02,0); frontGate.add(gL);
+  const gR = gL.clone(); gR.position.x=1.08; frontGate.add(gR);
+  const gBeam = new THREE.Mesh(new THREE.BoxGeometry(2.7,.18,.22), woodMat); gBeam.position.set(0,1.0,0); frontGate.add(gBeam);
+  const gBand = new THREE.Mesh(new THREE.BoxGeometry(2.48,.16,.14), tealMat); gBand.position.set(0,.84,.02); frontGate.add(gBand);
+  const gRoof = new THREE.Mesh(new THREE.BoxGeometry(3.15,.16,.84), roofTileMat); gRoof.position.set(0,1.35,0); frontGate.add(gRoof);
+  const gEaveL = new THREE.Mesh(new THREE.BoxGeometry(1.0,.1,.64), roofTileMat); gEaveL.position.set(-1.18,1.2,0); gEaveL.rotation.z=.27; frontGate.add(gEaveL);
+  const gEaveR = gEaveL.clone(); gEaveR.position.x=1.18; gEaveR.rotation.z=-.27; frontGate.add(gEaveR);
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(62,13), new THREE.MeshStandardMaterial({color:0x213445, roughness:.9}));
   ground.rotation.x=-Math.PI/2; ground.position.y=-1; scene.add(ground);
   const path = new THREE.Mesh(new THREE.BoxGeometry(41,.055,2.6), new THREE.MeshStandardMaterial({color:0x8d7a60, roughness:.72}));
@@ -303,95 +323,78 @@ updateChrome();
     const x=-18+i*(36/17);
     const pad = new THREE.Mesh(new THREE.CylinderGeometry(.36,.36,.045,32), stripeMat); pad.position.set(x,-.89,.05); scene.add(pad);
     const gate = new THREE.Group(); gate.position.set(x,-.18,-1.05); scene.add(gate);
-    const matGate = new THREE.MeshStandardMaterial({color:0xc6903d, emissive:0x9d5f0a, emissiveIntensity:i===0?1.8:.7});
-    const matRoof = new THREE.MeshStandardMaterial({color:0x225a58, emissive:0x0d1b1b, emissiveIntensity:.45});
-    const left = new THREE.Mesh(new THREE.BoxGeometry(.08,1.15,.08), matGate); left.position.set(-.32,.2,0); gate.add(left);
-    const right = left.clone(); right.position.x=.32; gate.add(right);
-    const top = new THREE.Mesh(new THREE.BoxGeometry(.82,.08,.08), matGate); top.position.set(0,.76,0); gate.add(top);
-    const roof = new THREE.Mesh(new THREE.BoxGeometry(.96,.08,.34), matRoof); roof.position.set(0,.94,0); roof.rotation.z=.03; gate.add(roof);
-    const eaveL = new THREE.Mesh(new THREE.BoxGeometry(.34,.05,.28), matRoof); eaveL.position.set(-.38,.88,0); eaveL.rotation.z=.24; gate.add(eaveL);
-    const eaveR = eaveL.clone(); eaveR.position.x=.38; eaveR.rotation.z=-.24; gate.add(eaveR);
+    const matGate = new THREE.MeshStandardMaterial({color:0x8f2a27, emissive:0x7a290f, emissiveIntensity:i===0?1.8:.7});
+    const matBeam = new THREE.MeshStandardMaterial({color:0x6c3c25, emissive:0x2b1106, emissiveIntensity:.35});
+    const matRoof = new THREE.MeshStandardMaterial({color:0x315a63, emissive:0x0d1b1b, emissiveIntensity:.45});
+    const left = new THREE.Mesh(new THREE.BoxGeometry(.1,1.18,.1), matGate); left.position.set(-.34,.2,0); gate.add(left);
+    const right = left.clone(); right.position.x=.34; gate.add(right);
+    const band = new THREE.Mesh(new THREE.BoxGeometry(.86,.09,.08), matBeam); band.position.set(0,.78,0); gate.add(band);
+    const dan = new THREE.Mesh(new THREE.BoxGeometry(.8,.07,.06), new THREE.MeshStandardMaterial({color:0x2f6c6b, emissive:0x113131, emissiveIntensity:.35})); dan.position.set(0,.68,.02); gate.add(dan);
+    const roof = new THREE.Mesh(new THREE.BoxGeometry(1.08,.1,.42), matRoof); roof.position.set(0,.98,0); gate.add(roof);
+    const eaveL = new THREE.Mesh(new THREE.BoxGeometry(.42,.06,.32), matRoof); eaveL.position.set(-.42,.87,0); eaveL.rotation.z=.26; gate.add(eaveL);
+    const eaveR = eaveL.clone(); eaveR.position.x=.42; eaveR.rotation.z=-.26; gate.add(eaveR);
     gate.userData.mat = matGate;
   }
 
-  // 궁궐·한옥 테마에 맞춘 귀여운 호랑이 캐릭터 배치
+  // 제주 원도심 맥락에 맞춘 청사초롱을 든 돌하르방 캐릭터 배치
   const hero = new THREE.Group(); scene.add(hero);
-  const tigerOrange = new THREE.MeshStandardMaterial({color:0xe08a2d, roughness:.8});
-  const tigerCream = new THREE.MeshStandardMaterial({color:0xf9ead0, roughness:.92});
-  const tigerStripe = new THREE.MeshStandardMaterial({color:0x241714, roughness:.8});
-  const tigerBrown = new THREE.MeshStandardMaterial({color:0x3d2d28, roughness:.78});
-  const tigerPink = new THREE.MeshStandardMaterial({color:0xf3a3a3, roughness:.9});
-  const vestMat = new THREE.MeshStandardMaterial({color:0x0f6671, roughness:.76});
+  const stoneMat = new THREE.MeshStandardMaterial({color:0x8a857d, roughness:1});
+  const stoneDark = new THREE.MeshStandardMaterial({color:0x68655f, roughness:1});
+  const lanternBlue = new THREE.MeshStandardMaterial({color:0x2f6cbd, emissive:0x173a7a, emissiveIntensity:.55});
+  const lanternWhite = new THREE.MeshStandardMaterial({color:0xf4f1e8, emissive:0xa89e85, emissiveIntensity:.25});
+  const lanternHandle = new THREE.MeshStandardMaterial({color:0x6f4326, roughness:.85});
 
-  const torso = new THREE.Mesh(new THREE.SphereGeometry(.39,24,24), tigerOrange); torso.scale.set(1.55,1.05,1.0); torso.position.set(-.05,-.02,0); hero.add(torso);
-  const belly = new THREE.Mesh(new THREE.SphereGeometry(.22,18,18), tigerCream); belly.scale.set(2.2,1.5,1.0); belly.position.set(.06,-.16,.05); hero.add(belly);
-  const head = new THREE.Mesh(new THREE.SphereGeometry(.43,28,28), tigerOrange); head.position.set(.82,.24,0); hero.add(head);
-  const muzzle = new THREE.Mesh(new THREE.SphereGeometry(.19,18,18), tigerCream); muzzle.scale.set(1.32,.95,1.0); muzzle.position.set(1.07,.08,0); hero.add(muzzle);
-  const nose = new THREE.Mesh(new THREE.SphereGeometry(.048,12,12), tigerBrown); nose.position.set(1.19,.1,0); hero.add(nose);
-  const cheekL = new THREE.Mesh(new THREE.SphereGeometry(.07,12,12), tigerPink); cheekL.scale.set(1.15,.75,.8); cheekL.position.set(1.02,-.02,.17); hero.add(cheekL);
-  const cheekR = cheekL.clone(); cheekR.position.z=-.17; hero.add(cheekR);
-  const eyeWhiteL = new THREE.Mesh(new THREE.SphereGeometry(.048,12,12), new THREE.MeshBasicMaterial({color:0xffffff})); eyeWhiteL.position.set(.95,.28,.15); hero.add(eyeWhiteL);
-  const eyeWhiteR = eyeWhiteL.clone(); eyeWhiteR.position.z=-.15; hero.add(eyeWhiteR);
-  const eyeL = new THREE.Mesh(new THREE.SphereGeometry(.022,12,12), new THREE.MeshBasicMaterial({color:0x121010})); eyeL.position.set(.98,.28,.18); hero.add(eyeL);
-  const eyeR = eyeL.clone(); eyeR.position.z=-.18; hero.add(eyeR);
-  const earL = new THREE.Mesh(new THREE.ConeGeometry(.11,.18,14), tigerOrange); earL.position.set(.62,.62,.18); earL.rotation.z=-.28; earL.rotation.x=.18; hero.add(earL);
-  const earR = earL.clone(); earR.position.z=-.18; earR.rotation.x=-.18; hero.add(earR);
-  const earInL = new THREE.Mesh(new THREE.ConeGeometry(.06,.1,12), tigerPink); earInL.position.set(.62,.58,.18); earInL.rotation.z=-.28; earInL.rotation.x=.18; hero.add(earInL);
-  const earInR = earInL.clone(); earInR.position.z=-.18; earInR.rotation.x=-.18; hero.add(earInR);
-  const vest = new THREE.Mesh(new THREE.BoxGeometry(.42,.32,.48), vestMat); vest.position.set(.08,.08,0); vest.rotation.z=.05; hero.add(vest);
-  const vestBand = new THREE.Mesh(new THREE.BoxGeometry(.08,.32,.52), new THREE.MeshStandardMaterial({color:0xd7b26a})); vestBand.position.set(.08,.08,0); hero.add(vestBand);
-  const smile = new THREE.Mesh(new THREE.TorusGeometry(.095,.013,8,18,Math.PI), tigerBrown); smile.position.set(1.11,.0,0); smile.rotation.z=Math.PI; smile.rotation.y=Math.PI/2; hero.add(smile);
-  const whiskerMat = new THREE.MeshStandardMaterial({color:0xf8f2e8});
-  function whisker(z, y, rot){ const w = new THREE.Mesh(new THREE.BoxGeometry(.17,.012,.012), whiskerMat); w.position.set(1.1,y,z); w.rotation.z=rot; hero.add(w); return w; }
-  whisker(.19,.08,.16); whisker(.18,-.01,-.06); whisker(-.19,.08,-.16); whisker(-.18,-.01,.06);
+  const body = new THREE.Mesh(new THREE.CylinderGeometry(.42,.48,1.25,18), stoneMat); body.position.set(0,-.02,0); hero.add(body);
+  const lower = new THREE.Mesh(new THREE.CylinderGeometry(.49,.54,.36,18), stoneMat); lower.position.set(0,-.73,0); hero.add(lower);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(.38,24,24), stoneMat); head.position.set(0,.77,0); hero.add(head);
+  const hat = new THREE.Mesh(new THREE.CylinderGeometry(.3,.5,.34,18), stoneDark); hat.position.set(0,1.18,0); hero.add(hat);
+  const brim = new THREE.Mesh(new THREE.CylinderGeometry(.46,.46,.05,20), stoneDark); brim.position.set(0,1.04,0); hero.add(brim);
+  const nose = new THREE.Mesh(new THREE.BoxGeometry(.08,.18,.12), stoneDark); nose.position.set(.36,.73,0); nose.rotation.z=-.12; hero.add(nose);
+  const eyeL = new THREE.Mesh(new THREE.SphereGeometry(.03,12,12), new THREE.MeshBasicMaterial({color:0x1d1b19})); eyeL.position.set(.28,.84,.12); hero.add(eyeL);
+  const eyeR = eyeL.clone(); eyeR.position.z=-.12; hero.add(eyeR);
+  const browL = new THREE.Mesh(new THREE.BoxGeometry(.14,.03,.03), stoneDark); browL.position.set(.26,.92,.12); browL.rotation.z=.25; hero.add(browL);
+  const browR = browL.clone(); browR.position.z=-.12; browR.rotation.z=-.25; hero.add(browR);
+  const mouth = new THREE.Mesh(new THREE.TorusGeometry(.08,.012,8,16,Math.PI), stoneDark); mouth.position.set(.31,.58,0); mouth.rotation.y=Math.PI/2; mouth.rotation.z=Math.PI; hero.add(mouth);
 
-  const armL = new THREE.Mesh(new THREE.CapsuleGeometry(.075,.42,6,10), tigerOrange);
+  const armL = new THREE.Mesh(new THREE.CapsuleGeometry(.065,.46,4,8), stoneMat);
   const armR = armL.clone();
-  const legL = new THREE.Mesh(new THREE.CapsuleGeometry(.085,.46,6,10), tigerOrange);
+  const legL = new THREE.Mesh(new THREE.CapsuleGeometry(.08,.38,4,8), stoneMat);
   const legR = legL.clone();
   hero.add(armL,armR,legL,legR);
-  const pawFL = new THREE.Mesh(new THREE.SphereGeometry(.09,14,14), tigerCream);
-  const pawFR = pawFL.clone();
-  const pawBL = pawFL.clone();
-  const pawBR = pawFL.clone();
-  hero.add(pawFL,pawFR,pawBL,pawBR);
 
-  [[-.38,.16,0,.34],[.02,.2,0,.12],[.38,.14,0,.28],[.82,.2,.16,.75],[.82,.2,-.16,-.75]].forEach(v=>{
-    const s = new THREE.Mesh(new THREE.BoxGeometry(.09,.25,.03), tigerStripe);
-    s.position.set(v[0],v[1],v[2]); s.rotation.z=v[3]; hero.add(s);
-  });
-
-  const tailBase = new THREE.Group(); hero.add(tailBase);
-  tailBase.position.set(-.86,.1,0);
-  const tail = new THREE.Mesh(new THREE.CapsuleGeometry(.06,.78,4,10), tigerOrange); tail.rotation.z=-.88; tail.position.set(-.31,.22,0); tailBase.add(tail);
-  const tailStripe1 = new THREE.Mesh(new THREE.BoxGeometry(.06,.1,.03), tigerStripe); tailStripe1.position.set(-.39,.27,0); tailStripe1.rotation.z=-.86; tailBase.add(tailStripe1);
-  const tailTip = new THREE.Mesh(new THREE.SphereGeometry(.075,12,12), tigerStripe); tailTip.position.set(-.61,.47,0); tailBase.add(tailTip);
+  const lanternGroup = new THREE.Group(); hero.add(lanternGroup);
+  const handle = new THREE.Mesh(new THREE.TorusGeometry(.12,.015,8,18,Math.PI), lanternHandle); handle.rotation.z=Math.PI/2; handle.position.set(.0,.18,0); lanternGroup.add(handle);
+  const lanternBody = new THREE.Mesh(new THREE.CylinderGeometry(.12,.14,.28,14), lanternBlue); lanternBody.position.set(.12,-.05,0); lanternGroup.add(lanternBody);
+  const lanternTop = new THREE.Mesh(new THREE.CylinderGeometry(.09,.11,.04,14), lanternHandle); lanternTop.position.set(.12,.11,0); lanternGroup.add(lanternTop);
+  const lanternBottom = lanternTop.clone(); lanternBottom.position.y=-.21; lanternGroup.add(lanternBottom);
+  const lanternStripe1 = new THREE.Mesh(new THREE.BoxGeometry(.02,.24,.12), lanternWhite); lanternStripe1.position.set(.12,-.05,0); lanternGroup.add(lanternStripe1);
+  const lanternStripe2 = new THREE.Mesh(new THREE.BoxGeometry(.18,.02,.12), lanternWhite); lanternStripe2.position.set(.12,-.05,0); lanternGroup.add(lanternStripe2);
   const targets = slides.map((_,i)=> -18 + i*(36/17));
   let targetIndex = 0;
   let targetX = targets[0];
-  hero.position.set(targetX,-.19,.24); hero.rotation.y=.22;
+  hero.position.set(targetX,-.07,.24); hero.rotation.y=.22;
   window.setTarget = idx => { targetIndex = idx; targetX = targets[idx]; };
 
   function animate(t){
     requestAnimationFrame(animate);
     const dx = targetX - hero.position.x;
-    hero.position.x += dx*.06;
-    const isRunning = Math.abs(dx)>.03;
-    const run = isRunning ? t*.02 : 0;
-    hero.position.y = -.19 + (isRunning ? Math.abs(Math.sin(run))*0.065 : 0);
+    hero.position.x += dx*.055;
+    const isMoving = Math.abs(dx)>.03;
+    const run = isMoving ? t*.016 : 0;
+    hero.position.y = -.07 + (isMoving ? Math.abs(Math.sin(run))*0.05 : 0);
 
-    armL.position.set(.28,-.28,.19); armR.position.set(.28,-.28,-.19);
-    legL.position.set(-.25,-.3,.19); legR.position.set(-.25,-.3,-.19);
-    pawFL.position.set(.28,-.58,.19); pawFR.position.set(.28,-.58,-.19);
-    pawBL.position.set(-.25,-.62,.19); pawBR.position.set(-.25,-.62,-.19);
+    armL.position.set(.18,.12,.24); armR.position.set(.18,.12,-.24);
+    legL.position.set(-.12,-.95,.16); legR.position.set(-.12,-.95,-.16);
+    armL.rotation.z = Math.sin(run)*.16 - .15;
+    armR.rotation.z = -Math.sin(run)*.28 + .6;
+    legL.rotation.z = -Math.sin(run)*.28;
+    legR.rotation.z = Math.sin(run)*.28;
 
-    armL.rotation.z = Math.sin(run)*.74; armR.rotation.z = -Math.sin(run)*.74;
-    legL.rotation.z = -Math.sin(run)*.7; legR.rotation.z = Math.sin(run)*.7;
-    tailBase.rotation.z = .34 + Math.sin(run)*.38;
-    head.rotation.z = isRunning ? Math.sin(run)*.06 : 0;
+    lanternGroup.position.set(.34,.05,-.24);
+    lanternGroup.rotation.z = .2 + Math.sin(run)*.2;
+    head.rotation.z = isMoving ? Math.sin(run)*.03 : 0;
     hero.rotation.y = dx >= 0 ? .22 : -Math.PI + .22;
-    eyeL.scale.y = eyeR.scale.y = isRunning && Math.sin(t*.01) > .88 ? .35 : 1;
-    eyeWhiteL.scale.y = eyeWhiteR.scale.y = eyeL.scale.y;
+    eyeL.scale.y = eyeR.scale.y = isMoving && Math.sin(t*.008) > .92 ? .3 : 1;
 
     scene.children.forEach(obj=>{
       if(obj.userData && obj.userData.mat) obj.userData.mat.emissiveIntensity = .55;
